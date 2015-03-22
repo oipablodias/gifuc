@@ -7,6 +7,7 @@ See how many unread messages are in your Inbox at the tab's icon.
 ## Installation
 
 Go to Chrome web store and click `install`:
+
 https://chrome.google.com/webstore/detail/gifuc-google-inbox-favico/pmjhnbcanebjkgkgieddinccembflgam
 
 Or download the source code and install it as an `unpacked extension`:
@@ -20,6 +21,7 @@ Or download the source code and install it as an `unpacked extension`:
 ## Usage
 
 Install the extension and access your Google Inbox account.
+
 It reads the Gmail Atom Feed every 30 seconds to get the unread messages count.
 
 ## TODO
@@ -39,6 +41,7 @@ It reads the Gmail Atom Feed every 30 seconds to get the unread messages count.
 ## History
 
 I'm trying to move from Gmail to Inbox and the lack of unread count was not helping. So I decided to write a simple extension to cover it until Google releases its own unread count.
+
 Thanks to [Extensionizr](http://extensionizr.com/) and [favico.js](https://github.com/ejci/favico.js).
 
 
