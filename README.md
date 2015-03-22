@@ -6,7 +6,7 @@ See how many unread messages are in your Inbox at the tab's icon.
 
 ## Installation
 
-Go to Chrome web store and click `install`:
+Go to Chrome web store and click `Add to Chrome`:
 
 https://chrome.google.com/webstore/detail/gifuc-google-inbox-favico/pmjhnbcanebjkgkgieddinccembflgam
 
