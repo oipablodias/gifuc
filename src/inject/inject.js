@@ -1,8 +1,10 @@
 chrome.extension.sendMessage({}, function(response) {
   var favicon;
   var getUnreadCount = function(callback){
+    var googleId = getMultipleAccountId();
     var request = new XMLHttpRequest();
-    request.open('GET', 'https://mail.google.com/mail/feed/atom', true);
+
+    request.open('GET', 'https://mail.google.com/mail/u/' + googleId + '/feed/atom', true);
 
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
@@ -17,6 +19,10 @@ chrome.extension.sendMessage({}, function(response) {
     };
 
     request.send();
+  }
+
+  var getMultipleAccountId = function () {
+    return window.location.pathname.substr(3, 1) || 0;
   }
 
   var check = function(){
