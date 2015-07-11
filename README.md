@@ -24,6 +24,14 @@ Install the extension and access your Google Inbox account.
 
 It reads the Gmail Atom Feed every 30 seconds to get the unread messages count.
 
+
+## CHANGELOG
+
+## [0.1.3] - 2015-07-11
+
+- Bugfix: Now works with multiple accounts (thx djalmaaraujo)
+
+
 ## TODO
 
 1. Watch DOM changes to get rid of 30s loop?
