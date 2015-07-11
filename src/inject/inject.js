@@ -26,7 +26,6 @@ chrome.extension.sendMessage({}, function(response) {
   }
 
   var check = function(){
-    console.log('check');
     getUnreadCount(function(error, unread){
       if(error === null){
         favicon.badge(unread);
