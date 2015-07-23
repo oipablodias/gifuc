@@ -27,6 +27,10 @@ It reads the Gmail Atom Feed every 30 seconds to get the unread messages count.
 
 ## CHANGELOG
 
+## [0.1.4] - 2015-07-23
+
+- Bugfix: Fixed counter for more than 9 unread messages (thx Paulo Tavares)
+
 ## [0.1.3] - 2015-07-11
 
 - Bugfix: Now works with multiple accounts (thx djalmaaraujo)

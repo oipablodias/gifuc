@@ -8,7 +8,7 @@ chrome.extension.sendMessage({}, function(response) {
 
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
-        var res = request.responseText.match(/<fullcount>(\d)<\/fullcount>/);
+        var res = request.responseText.match(/<fullcount>(\d+)<\/fullcount>/);
         callback(null, res[1]);
       }
       callback('Error request status ' + request.status);
