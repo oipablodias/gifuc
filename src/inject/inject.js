@@ -27,7 +27,7 @@ chrome.extension.sendMessage({}, function(response) {
 
   var check = function(){
     getUnreadCount(function(error, unread){
-      if(error === null){
+      if(error === null && unread > 0){
         favicon.badge(unread);
       }
     });
@@ -42,7 +42,7 @@ chrome.extension.sendMessage({}, function(response) {
         animation:'none',
       });
 
-      favicon.badge(0);
+      // favicon.badge(0);
       check();
 
       var checkInterval = setInterval(function(){ check(); }, 30000);
