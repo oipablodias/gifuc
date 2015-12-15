@@ -27,8 +27,12 @@ chrome.extension.sendMessage({}, function(response) {
 
   var check = function(){
     getUnreadCount(function(error, unread){
-      if(error === null && unread > 0){
-        favicon.badge(unread);
+      if (error === null){
+        if (unread == 0) {
+          favicon.reset();
+        } else {
+          favicon.badge(unread);
+        }
       }
     });
   }
